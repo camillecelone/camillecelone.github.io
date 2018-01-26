@@ -165,6 +165,24 @@ img {
 
 }
 
+// About Page Styling
+
+.aboutTitle {
+  grid-column: col-start / span 12;
+  grid-row: 1;
+}
+
+.about {
+  grid-column: col-start 5 / span 8;
+  grid-row: 2;
+  padding-bottom: 2em;
+}
+
+.headshot {
+  grid-column: col-start 1 / span 4;
+  grid-row: 2;
+}
+
 // Project Pages Styling
 #container {
   display: grid;
@@ -206,6 +224,14 @@ h3 {
 }
 
 .process {
+  font-family: $montserrat;
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: center;
+  padding: .75em 0 2em;
+}
+
+.tasks {
   font-family: $montserrat;
   font-size: 1.7em;
   font-weight: 600;
@@ -273,6 +299,12 @@ p {
 }
 
 // Atlas Steps
+
+.tasksTitle {
+  grid-column: col-start / span 12;
+  grid-row: 6;
+  color: #2D6D9C;
+}
 
 .ATLASstep1 {
   grid-column: col-start 1 / span 4;
