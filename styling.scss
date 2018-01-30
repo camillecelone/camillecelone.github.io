@@ -365,19 +365,25 @@ p {
 
 .PMCCstep2 {
   grid-column: col-start / span 4;
-  grid-row: 7;
-  margin-top: 14em;
+  grid-row: 8;
+  margin-top: 2em;
+}
+
+.PMCCstep2image {
+  grid-column: col-start 5 / span 8;
+  grid-row: 8;
+  margin-top: 2em;
 }
 
 .PMCCstep3 {
   grid-column: col-start 1 / span 4;
-  grid-row: 8;
+  grid-row: 9;
   margin-top: 2em;
 }
 
 .PMCCstep3image1 {
   grid-column: col-start 5 / span 4;
-  grid-row: 8;
+  grid-row: 9;
   margin-top: 2em;
   width: 100%;
   height: auto;
@@ -385,7 +391,7 @@ p {
 
 .PMCCstep3image2 {
   grid-column: col-start 9 / span 4;
-  grid-row: 8;
+  grid-row: 9;
   margin-top: 2em;
   width: 100%;
   height: auto;
@@ -393,19 +399,19 @@ p {
 
 .PMCCchallengesTitle {
   grid-column: col-start / span 12;
-  grid-row: 9;
+  grid-row: 10;
   color: #2D6D9C;
 }
 
 .PMCCchallenge1 {
   grid-column: col-start / span 6;
-  grid-row: 10;
+  grid-row: 11;
   padding-bottom: 2em;
 }
 
 .PMCCchallenge2 {
   grid-column: col-start 7 / span 6;
-  grid-row: 10;
+  grid-row: 11;
   padding-bottom: 2em;
 }
 
