@@ -261,6 +261,12 @@ p {
   line-height: 1.75em;
 }
 
+#list {
+  font-family: $open-sans;
+  font-size: .8em;
+  line-height: 1.75em;
+}
+
 .projectTitle {
   grid-column: col-start / span 12;
   grid-row: 1;
@@ -299,45 +305,93 @@ p {
 }
 
 // Atlas Steps
-
 .tasksTitle {
   grid-column: col-start / span 12;
   grid-row: 6;
   color: #2D6D9C;
 }
 
-/*
-.ATLASstep1 {
+.appearanceTitle {
+  grid-column: col-start / span 12;
+  grid-row: 6;
+  color: #2D6D9C;
+}
+
+.appearanceProblem {
   grid-column: col-start 1 / span 4;
-  grid-row: 7;
+  grid-row: 8;
+  padding-bottom: 2em;
 }
 
-.ATLASstep2 {
+.appearanceObjective {
   grid-column: col-start 5 / span 4;
-  grid-row: 7;
+  grid-row: 8;
+  padding-bottom: 2em;
 }
 
-.ATLASstep3 {
+.appearanceAssumptions {
   grid-column: col-start 9 / span 4;
-  grid-row: 7;
+  grid-row: 8;
+  padding-bottom: 2em;
 }
-*/
 
-.ATLASstep4 {
+.ATLASoriginalimg {
+  grid-column: col-start 1 / span 12;
+  grid-row: 9;
+  padding-bottom: 2em;
+}
+
+.appearanceStep1 {
   grid-column: col-start / span 4;
-  grid-row: 7;
-  //margin-top: 2em;
+  grid-row: 10;
+  padding-bottom: 2em;
 }
 
-.ATLASstep4img {
+.appearanceStep2 {
+  grid-column: col-start 5 / span 4;
+  grid-row: 10;
+  padding-bottom: 2em;
+}
+
+.appearanceStep3 {
+  grid-column: col-start 9 / span 4;
+  grid-row: 10;
+  padding-bottom: 2em;
+}
+
+.atlasAppearanceSketches {
+  grid-column: col-start 1 / span 12;
+  grid-row: 11;
+  padding-bottom: 2em;
+}
+
+.appearanceStep4 {
+  grid-column: col-start 1 / span 4;
+  grid-row: 12;
+  padding-bottom: 2em;
+}
+
+.atlasAppearanceTabs {
   grid-column: col-start 5 / span 8;
-  grid-row: 7;
-  //margin-top: 2em;
+  grid-row: 12;
+  padding-bottom: 2em;
+}
+
+.appearanceStep5 {
+  grid-column: col-start 1 / span 4;
+  grid-row: 13;
+  padding-bottom: 2em;
+}
+
+.atlasAppearanceInterface {
+  grid-column: col-start 5 / span 8;
+  grid-row: 13;
+  padding-bottom: 2em;
 }
 
 .ATLASupcoming {
   grid-column: col-start / span 12;
-  grid-row: 9;
+  grid-row: 14;
   font-family: $montserrat;
   font-size: 2em;
   font-weight: 500;
@@ -351,6 +405,78 @@ p {
 //  grid-row: 10;
 //  color: #2D6D9C;
 //}
+
+
+// Arrived Steps
+.ARRIVEDstep1 {
+  grid-column: col-start / span 4;
+  grid-row: 7;
+}
+
+
+.ARRIVEDstep2 {
+  grid-column: col-start 5 / span 4;
+  grid-row: 7;
+}
+
+.ARRIVEDstep3 {
+  grid-column: col-start 9 / span 4;
+  grid-row: 7;
+}
+
+.arrivedstep3image {
+  grid-column: col-start 1 / span 12;
+  grid-row: 8;
+  margin-top: 2em;
+}
+
+.ARRIVEDstep4 {
+  grid-column: col-start / span 4;
+  grid-row: 9;
+  margin-top: 2em;
+}
+
+.arrivedstep4image {
+  grid-column: col-start 5 / span 8;
+  grid-row: 9;
+  margin-top: 2em;
+}
+
+.ARRIVEDstep5 {
+  grid-column: col-start 1 / span 4;
+  grid-row: 10;
+  margin-top: 2em;
+}
+
+.arrivedstep5image {
+  grid-column: col-start 5 / span 8;
+  grid-row: 10;
+  margin-top: 2em;
+}
+
+.ARRIVEDstep6 {
+  grid-column: col-start 9 / span 4;
+  grid-row: 10;
+  margin-top: 2em;
+}
+
+.ARRIVEDchallengesTitle {
+  grid-column: col-start / span 12;
+  grid-row: 11;
+  color: #2D6D9C;
+}
+
+.ARRIVEDchallenge1 {
+  grid-column: col-start / span 6;
+  grid-row: 12;
+  padding-bottom: 2em;
+}
+
+.ARRIVEDchallenge2 {
+  grid-column: col-start 7 / span 6;
+  grid-row: 12;
+  padding-bottom: 2em;
+}
 
 // PMCC Steps
 .PMCCstep1 {
@@ -467,76 +593,6 @@ p {
   padding-bottom: 2em;
 }
 
-// Arrived Steps
-.ARRIVEDstep1 {
-  grid-column: col-start / span 4;
-  grid-row: 7;
-}
-
-
-.ARRIVEDstep2 {
-  grid-column: col-start 5 / span 4;
-  grid-row: 7;
-}
-
-.ARRIVEDstep3 {
-  grid-column: col-start 9 / span 4;
-  grid-row: 7;
-}
-
-.arrivedstep3image {
-  grid-column: col-start 1 / span 12;
-  grid-row: 8;
-  margin-top: 2em;
-}
-
-.ARRIVEDstep4 {
-  grid-column: col-start / span 4;
-  grid-row: 9;
-  margin-top: 2em;
-}
-
-.arrivedstep4image {
-  grid-column: col-start 5 / span 8;
-  grid-row: 9;
-  margin-top: 2em;
-}
-
-.ARRIVEDstep5 {
-  grid-column: col-start 1 / span 4;
-  grid-row: 10;
-  margin-top: 2em;
-}
-
-.arrivedstep5image {
-  grid-column: col-start 5 / span 8;
-  grid-row: 10;
-  margin-top: 2em;
-}
-
-.ARRIVEDstep6 {
-  grid-column: col-start 9 / span 4;
-  grid-row: 10;
-  margin-top: 2em;
-}
-
-.ARRIVEDchallengesTitle {
-  grid-column: col-start / span 12;
-  grid-row: 11;
-  color: #2D6D9C;
-}
-
-.ARRIVEDchallenge1 {
-  grid-column: col-start / span 6;
-  grid-row: 12;
-  padding-bottom: 2em;
-}
-
-.ARRIVEDchallenge2 {
-  grid-column: col-start 7 / span 6;
-  grid-row: 12;
-  padding-bottom: 2em;
-}
 
 // Footer Styling
 
