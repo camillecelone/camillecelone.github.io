@@ -89,18 +89,6 @@ hr {
       grid-template-rows: minmax(3em, [row] auto);
       grid-column-gap: 2%;
     }
-}
-
-@media screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (-webkit-min-device-pixel-ratio: 3) {
     #container {
       @include display-grid;
       -ms-grid-columns: repeat(8, [col-start] 1fr);
@@ -109,7 +97,7 @@ hr {
       grid-template-rows: minmax(3em, [row] auto);
       grid-column-gap: 2%;
     }
-}
+  }
 
 // Header Styling
 header {
