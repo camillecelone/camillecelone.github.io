@@ -69,6 +69,34 @@ hr {
   }
 }
 
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (min-device-width: 414px)
+  and (max-device-width: 736px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #mainContainer {
+      @include display-grid;
+      -ms-grid-columns: repeat(6, [col-start] 1fr);
+      -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-template-rows: minmax(3em, [row] auto);
+      grid-column-gap: 2%;
+    }
+    #container {
+      @include display-grid;
+      -ms-grid-columns: repeat(8, [col-start] 1fr);
+      -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-template-rows: minmax(3em, [row] auto);
+      grid-column-gap: 2%;
+    }
+  }
+
 // Header Styling
 header {
   position: absolute;
