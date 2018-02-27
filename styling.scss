@@ -13,8 +13,8 @@ $open-sans: "Open Sans", sans-serif;
 }
 
 body {
-  width: 960px;
-  margin: 0 auto 4em;
+  max-width: 3840px;
+  margin: 0 5% 4em 5%;
   line-height: 1.4em;
 }
 
@@ -23,14 +23,51 @@ a {
   color: inherit;
 }
 
+hr {
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: 0em;
+  border-top: .09em solid #E4A13E;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@mixin display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+// Screen Size
+
+@media screen and (min-width: 960px) {
+  #mainContainer {
+    @include display-grid;
+    -ms-grid-columns: repeat(12, [col-start] 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: minmax(3em, [row] auto);
+    grid-column-gap: 2%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #mainContainer {
+    @include display-grid;
+    -ms-grid-columns: repeat(6, [col-start] 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: minmax(3em, [row] auto);
+    grid-column-gap: 2%;
+  }
+}
+
 // Header Styling
 header {
+  position: absolute;
+  left: 0;
+  right: 0;
   padding: 2em 0 1em;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  width: 960px;
-  box-shadow: 0em .1em #E4A13E;
-  z-index: 9999;
 }
 
 h1 {
@@ -48,6 +85,7 @@ h1 {
   color: black;
   font-size: 1.25em;
   display: inline;
+  padding-left: 12.5%
 }
 
 #name:hover {
@@ -61,6 +99,7 @@ nav {
   color: inherit;
   font-size: 0.9em;
   float: right;
+  padding-right: 12.5%
 }
 
 ul{
@@ -79,16 +118,19 @@ nav ul li:hover {
 }
 
 // Work Styling
-#mainContainer {
-  display: grid;
+/*#mainContainer {
+  @include display-grid;
+  -ms-grid-columns: repeat(12, [col-start] 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr;
   grid-template-columns: repeat(12, [col-start] 1fr);
   grid-template-rows: minmax(3em, [row] auto);
   grid-column-gap: 2%;
-}
+}*/
 
 .bio {
   grid-column: col-start / span 12;
   grid-row: 1;
+  line-height: 2.5em;
 }
 
 .mainItem2 {
@@ -113,8 +155,11 @@ nav ul li:hover {
 
 img {
   max-width: 99.5%;
+  width: auto;
+  height: auto;
   display: block;
   margin-bottom: .75em;
+  position: relative;
 }
 
 .homeImage {
@@ -315,6 +360,7 @@ p {
   grid-column: col-start / span 12;
   grid-row: 6;
   color: #2D6D9C;
+  padding-top: 1em;
 }
 
 .appearanceProblem {
@@ -386,29 +432,65 @@ p {
 .atlasAppearanceInterface {
   grid-column: col-start 5 / span 8;
   grid-row: 13;
+  padding-bottom: 2em;
 }
 
-.ATLASupcoming {
-  grid-column: col-start / span 12;
+.dualVizTitle {
+  grid-column: col-start 1 / span 12;
   grid-row: 14;
-  font-family: $montserrat;
-  font-size: 2em;
-  font-weight: 500;
   color: #2D6D9C;
-  text-align: center;
-  padding: 2em 0 2em;
 }
 
-//.ATLASchallengesTitle {
-//  grid-column: col-start / span 12;
-//  grid-row: 10;
-//  color: #2D6D9C;
-//}
+.dualVizProblem {
+  grid-column: col-start 1 / span 4;
+  grid-row: 15;
+  padding-bottom: 2em;
+}
+
+.dualVizObjective {
+  grid-column: col-start 5 / span 4;
+  grid-row: 15;
+  padding-bottom: 2em;
+}
+
+.dualVizAssumptions {
+  grid-column: col-start 9 / span 4;
+  grid-row: 15;
+  padding-bottom: 2em;
+}
+
+.dualVizResult {
+  grid-column: col-start 1 / span 4;
+  grid-row: 16;
+  padding-bottom: 2em;
+}
+
+.dualVizInterface {
+  grid-column: col-start 5 / span 8;
+  grid-row: 16;
+  padding-bottom: 2em;
+}
+
+.ATLASchallengesTitle {
+  grid-column: col-start 1 / span 12;
+  grid-row: 17;
+  color: #2D6D9C;
+}
+
+.ATLASchallenge1 {
+  grid-column: col-start 1 / span 4;
+  grid-row: 18;
+}
+
+.ATLASchallenge2 {
+  grid-column: col-start 5 / span 4;
+  grid-row: 18;
+}
 
 
 // Arrived Steps
 .ARRIVEDstep1 {
-  grid-column: col-start / span 4;
+  grid-column: col-start 1 / span 4;
   grid-row: 7;
 }
 
@@ -592,17 +674,7 @@ p {
   padding-bottom: 2em;
 }
 
-
 // Footer Styling
-
-hr {
-  width: 100%;
-  left: 0;
-  right: 0;
-  border: 0em;
-  border-top: .09em solid #E4A13E;
-  margin-top: 1.5em;
-}
 
 footer {
   position: absolute;
