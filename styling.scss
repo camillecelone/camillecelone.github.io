@@ -5,7 +5,6 @@
 $montserrat: "Montserrat", sans-serif;
 $open-sans: "Open Sans", sans-serif;
 
-
 // Styling
 * {
   margin: 0;
@@ -41,7 +40,7 @@ hr {
 // Screen Size
 
 @media screen and (min-width: 960px) {
-  #mainContainer {
+  #mainContainer #container{
     @include display-grid;
     -ms-grid-columns: repeat(12, [col-start] 1fr);
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -55,6 +54,14 @@ hr {
   #mainContainer {
     @include display-grid;
     -ms-grid-columns: repeat(6, [col-start] 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: minmax(3em, [row] auto);
+    grid-column-gap: 2%;
+  }
+  #container {
+    @include display-grid;
+    -ms-grid-columns: repeat(8, [col-start] 1fr);
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(12, [col-start] 1fr);
     grid-template-rows: minmax(3em, [row] auto);
@@ -229,21 +236,15 @@ img {
 }
 
 // Project Pages Styling
-#container {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: minmax(3em, auto);
-  grid-column-gap: 2%;
-  grid-row-gap: .5em;
-}
 
 #projectTitle {
   font-family: $montserrat;
   font-size: 2.5em;
   font-weight: 600;
   text-align: center;
-  padding: 4em 0 1.75em;
+  padding: 3.5em 0 1.75em;
   color: #2D6D9C;
+  line-height: 1.5em;
 }
 
 #projectimg {
