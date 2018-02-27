@@ -50,7 +50,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   #mainContainer {
     @include display-grid;
     -ms-grid-columns: repeat(6, [col-start] 1fr);
