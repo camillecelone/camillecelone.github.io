@@ -52,7 +52,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   #mainContainer {
     @include display-grid;
     -ms-grid-columns: repeat(6, [col-start] 1fr);
@@ -515,12 +515,12 @@ margin-top: 1.5em;
 }
 
 .ATLASchallenge1 {
-  grid-column: col-start 1 / span 4;
+  grid-column: col-start 1 / span 6;
   grid-row: 18;
 }
 
 .ATLASchallenge2 {
-  grid-column: col-start 5 / span 4;
+  grid-column: col-start 7 / span 6;
   grid-row: 18;
 }
 
